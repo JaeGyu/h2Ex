@@ -1,0 +1,7 @@
+1. db에서 session이라는게 무엇인지?
+   (두 호스트간에 Data를 교환시키기 위한 논리적인 연결
+    사용자가 db서버에 접속하는때부터 종료할때가지 유지된다
+    )
+
+2. java에서 Closeable라는 클래스는 무엇을 할때 사용되는지?
+   org.h2.engine.SessionInterface 에서 Closeable를 extends하는데 왜 하는건지?
