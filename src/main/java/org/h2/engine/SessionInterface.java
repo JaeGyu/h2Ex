@@ -26,6 +26,8 @@ public interface SessionInterface extends Closeable{
 	/**
 	 * Roll back pending transations and close the session.
 	 * 아직 세션안에서 처리가 안된(보류) 트랜젝션들을 롤백시키고 세션을 닫는다.
+	 * try{} 안에서 자동으로 자원(세션)을 종료하기위해 SessionInterface를 구현하는 클래스에서
+	 * 구현해준다.
 	 * */
 	@Override
 	void close();
